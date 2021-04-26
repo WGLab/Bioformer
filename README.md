@@ -15,7 +15,7 @@ pretrained for 2 million steps
 
 #### Tensorflow checkpoint
 
-The tensorflow checkpoint can be downloaded from [here](https://drive.google.com/file/d/1DP6nm6lGIOI-ob7GrQ24rsjwX954wX1r/view?usp=sharing). 
+The tensorflow checkpoint can be downloaded from [here](https://drive.google.com/file/d/1H328pWFwvSGN0sMxYO_kAKjSLoPJDPVk/view?usp=sharing). 
 
 The `.zip` file contains three items:
 
