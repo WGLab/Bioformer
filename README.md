@@ -1,5 +1,5 @@
 # LitBERT
-LitBERT is a light-weight BERT model pretrained from biomedical Literature. LitBERT was pretrained on all PubMed abstracts (as of Jan 2021) and 1 million randomly-sampled PubMed Central full-text articles. The PubMed Central full-text articles were down-sampled to 1 million such that the total size of the full-text articles are comparable with that of PubMed abstracts. We used the original implementation of [BERT](https://github.com/google-research/bert) to train the model. It was pretrained for 2 million steps. LitBERT has the following features:
+LitBERT is a light-weight BERT model pretrained from biomedical Literature. LitBERT was pretrained on all PubMed abstracts (as of Jan 2021) and 1 million randomly-sampled PubMed Central full-text articles. We used the original implementation of [BERT](https://github.com/google-research/bert) to train the model. It was pretrained for 2 million steps. LitBERT has the following features:
  
  - **Accurate**. LitBERT achived better performance than the previous state of the art (SOAT) model BioBERT-Base (v1.1)
  - **Light weight**. LitBERT has 8 transformer layers and the embedding size is 512. Compared with a typical BERT-base model (e.g. BioBERT-Base), LitBERT uses 60% less parameters. 
@@ -9,5 +9,10 @@ LitBERT is a light-weight BERT model pretrained from biomedical Literature. LitB
 
 ## Download 
 
+### LitBERT-cased-v1.0 (2M steps)
+#### Tensorflow models
+
+
+#### Pytorch models
 
 ## Fine-tuning LitBERT
