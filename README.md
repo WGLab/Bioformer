@@ -9,10 +9,18 @@ LitBERT is a light-weight BERT model pretrained from biomedical Literature. LitB
 
 ## Download 
 
-### LitBERT-cased-v1.0 (2M steps)
-#### Tensorflow models
+### LitBERT-cased-v1.0 (2M steps) (hidden_embedding_size=512, attention_head=8, layer=8)
 
+#### Tensorflow checkpoint
 
-#### Pytorch models
+The tensorflow checkpoint can be downloaded from [here](https://drive.google.com/file/d/1DP6nm6lGIOI-ob7GrQ24rsjwX954wX1r/view?usp=sharing). 
+
+The `.zip` file contains three items:
+
+- A TensorFlow checkpoint (LitBERT-cased-biomed-vocab-model.ckpt) containing the pre-trained weights (which is actually 3 files).
+- A WordPiece vocabulary file (vocab.txt) used for (de)tokenization. This is a biomedical vocabulary which was trained from PubMed abstracts and PubMed Central full-text articles. 
+- A config file (config.json) which specifies the hyperparameters of the model.
+
+#### Pytorch checkpoint
 
 ## Fine-tuning LitBERT
