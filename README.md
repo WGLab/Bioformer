@@ -15,10 +15,7 @@ pretrained for 2 million steps
 
 #### Tensorflow checkpoint
 
-The tensorflow checkpoint can be downloaded from [here](https://drive.google.com/file/d/1H328pWFwvSGN0sMxYO_kAKjSLoPJDPVk/view?usp=sharing). 
-
-The `.zip` file contains three items:
-
+The tensorflow checkpoint can be downloaded from [here](https://drive.google.com/file/d/1H328pWFwvSGN0sMxYO_kAKjSLoPJDPVk/view?usp=sharing). The `.zip` file contains three items:
 - A TensorFlow checkpoint (LitBERT-cased-biomed-vocab-model.ckpt) containing the pre-trained weights (which is actually 3 files).
 - A WordPiece vocabulary file (vocab.txt) used for (de)tokenization. This is a biomedical vocabulary which was trained from PubMed abstracts and PubMed Central full-text articles. 
 - A config file (config.json) which specifies the hyperparameters of the model.
