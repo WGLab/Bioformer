@@ -11,6 +11,7 @@ LitBERT is a light-weight BERT model pretrained from biomedical Literature. LitB
 
 ### LitBERT-cased-v1.0 
 hidden_embedding_size=512, attention_head=8, layer=8
+
 pretrained for 2 million steps
 
 #### Tensorflow checkpoint
