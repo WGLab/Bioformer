@@ -12,9 +12,9 @@ Bioformer is a lightweight BERT model pretrained from biomedical Literature. Bio
 #### Tensorflow checkpoint
 
 The tensorflow checkpoint can be downloaded from [here](https://drive.google.com/file/d/1UWrXsstU730xIMjSSD3I3CwVJpc_G97E/view?usp=sharing). The `.zip` file contains three items:
-- A TensorFlow checkpoint (`Bioformer-cased-biomed-vocab-model.ckpt`) containing the pre-trained weights (which is actually 3 files).
+- A TensorFlow checkpoint (`bioformer-cased-v1.0-model.ckpt-2000000`) containing the pre-trained weights (which is actually 3 files).
 - A WordPiece vocabulary file (`vocab.txt`) used for (de)tokenization. This is a biomedical vocabulary which was trained from PubMed abstracts and PubMed Central full-text articles. 
-- A config file (`config.json`) which specifies the hyperparameters of the model.
+- A config file (`bert_config.json`) which specifies the hyperparameters of the model.
 
 
 #### Pytorch checkpoint
