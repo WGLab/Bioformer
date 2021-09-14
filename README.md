@@ -1,11 +1,11 @@
 # Bioformer
-Bioformer is a light-weight BERT model pretrained from biomedical Literature. Bioformer was pretrained on all PubMed abstracts (as of Jan 2021) and 1 million randomly-sampled PubMed Central full-text articles. We used the original implementation of [BERT](https://github.com/google-research/bert) to train the model. Bioformer has the following features:
+Bioformer is a lightweight BERT model pretrained from biomedical Literature. Bioformer was pretrained on all PubMed abstracts (as of Jan 2021) and 1 million randomly-sampled PubMed Central full-text articles. We used the original implementation of [BERT](https://github.com/google-research/bert) to train the model. Bioformer has the following features:
  
- - **Accurate**. Bioformer achived better performance than the previous state of the art (SOAT) model BioBERT-Base (v1.1)
- - **Light weight**. Bioformer has 8 transformer layers and the embedding size is 512. Compared with a typical BERT-base model (e.g. BioBERT-Base), Bioformer uses 60% less parameters. 
- - **Fast and memory efficient**. The training and predicting speed of Bioformer is 200% faster than a typical BERT-base model. Bioformer can be fine-tuned on GPUs with small memory. 
- - **Biomedical vocabulary**. Bioformer uses a biomedical vocabulary of 32768 tokens, which was trained from PubMed abstracts and PubMed Central full-text articles. Bioformer is able to encode some special unicode characters not in the original BERT vocabulary. 
- - **Long sequence input**. The biomedical vocabulary is more efficient at encoding biomedical text and thus the max sequence length (character length) of Bioformer is 30% longer than BERT model with general vocabulary, although the max token length is the same (512 tokens). 
+ - **Accurate**. Bioformer achieves comparable or even better performance than BioBERT/PubMedBERT on downstream NLP tasks.
+ - **Lightweight**. Bioformer has 8 layers (transformer blocks) with a hidden embedding size of 512, and the number of self-attention heads is 8. Its total number of parameters is 42,820,610. Compared with a typical BERT-base model (e.g. BioBERT-Base), Bioformer uses 60% less parameters. 
+ - **Fast and memory efficient**. Bioformer is 3X as fast as a BERT-base model. Bioformer can be fine-tuned using GPUs with 4-8GB memory. 
+ - **Biomedical vocabulary**. Bioformer uses a biomedical vocabulary of 32768 tokens, which was trained from PubMed abstracts and PubMed Central full-text articles. Bioformer is able to encode some special unicode symbols that are not in the original BERT vocabulary. 
+ - **Long sequence input**. The biomedical vocabulary is more efficient at encoding biomedical text and thus the max input text length (character length) of Bioformer is 20% longer than BERT model with general vocabulary, although the max token length is the same (512 tokens). 
 
 ## Download 
 
@@ -24,12 +24,7 @@ The tensorflow checkpoint can be downloaded from [here](https://drive.google.com
 
 #### Pytorch checkpoint
 
-The Pytorch checkpoint can be downloaded from [here](https://drive.google.com/file/d/19cuZIjLNJ6g0AuNT3OGYpT5Y7wC3Xcbl/view?usp=sharing). The `.zip` file contains four items:
-- A Pytorch checkpoint (`pytorch_model.bin`) containing the pre-trained weights.
-- A WordPiece vocabulary file (`vocab.txt`) used for (de)tokenization. This is a biomedical vocabulary which was trained from PubMed abstracts and PubMed Central full-text articles. 
-- A model config file (`config.json`) which specifies the hyperparameters of the model.
-- A tokenizer config file (`tokenizer_config.json`). 
-
+The Pytorch checkpoint can be downloaded from [Huggingface](https://huggingface.co/bioformers/bioformer-cased-v1.0). You can easily use Bioformer with the [transformers](https://github.com/huggingface/transformers) library. 
 ## Acknowledgment
 
 Bioformer is supported by the Google TPU Research Cloud (TRC) program.
