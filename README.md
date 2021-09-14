@@ -9,11 +9,6 @@ Bioformer is a lightweight BERT model pretrained from biomedical Literature. Bio
 
 ## Download 
 
-### Bioformer-cased-v1.0 
-hidden_embedding_size=512, attention_head=8, layer=8
-
-pretrained for 2 million steps
-
 #### Tensorflow checkpoint
 
 The tensorflow checkpoint can be downloaded from [here](https://drive.google.com/file/d/1H328pWFwvSGN0sMxYO_kAKjSLoPJDPVk/view?usp=sharing). The `.zip` file contains three items:
@@ -25,6 +20,8 @@ The tensorflow checkpoint can be downloaded from [here](https://drive.google.com
 #### Pytorch checkpoint
 
 The Pytorch checkpoint can be downloaded from [Huggingface](https://huggingface.co/bioformers/bioformer-cased-v1.0). You can easily use Bioformer with the [transformers](https://github.com/huggingface/transformers) library. 
+
+
 ## Acknowledgment
 
-Bioformer is supported by the Google TPU Research Cloud (TRC) program.
+Bioformer is partly supported by the Google TPU Research Cloud (TRC) program.
