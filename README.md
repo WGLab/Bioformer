@@ -1,5 +1,5 @@
-# Bioformer
-Bioformer is a lightweight BERT model pretrained from biomedical Literature. Bioformer was pretrained on all PubMed abstracts (as of Jan 2021) and 1 million randomly-sampled PubMed Central full-text articles. We used the original implementation of [BERT](https://github.com/google-research/bert) to train the model. Bioformer has the following features:
+# Bioformer: an efficient BERT model for biomedical text mining
+Bioformer is a lightweight BERT model pretrained from biomedical Literature. We pretrained two Bioformer models, `Bioformer-8L` and `Bioformer-16L`. Both models were pretrained on all PubMed abstracts (as of Jan 2021) and 1 million subsampled PubMed Central full-text articles. We used the original implementation of [BERT](https://github.com/google-research/bert) to train the model. Bioformer models have the following features:
  
  - **Accurate**. Bioformer achieves comparable or even better performance than BioBERT/PubMedBERT on downstream NLP tasks.
  - **Lightweight**. Bioformer has 8 layers (transformer blocks) with a hidden embedding size of 512, and the number of self-attention heads is 8. Its total number of parameters is 42,820,610. Compared with a typical BERT-base model (e.g. BioBERT-Base), Bioformer uses 60% less parameters. 
